@@ -1,35 +1,15 @@
-# Ten Thousand Game
+# LAB - Class Number 43
 
-## Version 1
+## Project: Ten Thousand Bot
 
-- GameLogic class
-  - roll_dice
-  - calculate_score
+### Author: Oliver Speir
 
-- Banker
-  - deposit/bank
-  - shelf
-  - clear
+### Description
 
-## Version 2
+- Simple rule based AI that plays Ten Thousand 
+- YourBot beats NervousNellie but does not beat MarkBot 
 
-- beginning Game class
-  - allows banking or quitting on first roll of multiple rounds
-  - no rerolls
-  - no zilches
-  - no cheating checks
-- Introducing Flow testing with Flo
+### Setup
 
-## Version 3
-
-- validate_keepers
-- get_scorers
-- Advanced Game class
-  - rerolls allowed
-  - using all six dice resets to six dice
-  - zilches happen
-  - cheating is checked
-
-## Version 4
-
-- Bot time
+- `pip install -r requirements.txt`
+- run : `python bots.py`

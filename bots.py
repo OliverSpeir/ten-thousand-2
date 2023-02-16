@@ -159,14 +159,11 @@ class DaringDarla(BaseBot):
 
 class YourBot(BaseBot):
     def _roll_bank_or_quit(self):
-        """your logic here"""
-        return "b"
 
-    def _enter_dice(self):
-        """simulate user entering which dice to keep.
-        Defaults to all scoring dice"""
+        if self.unbanked_points >= 750 or self.dice_remaining < 3:
+            return "b"
 
-        return super()._enter_dice()
+        return "r"
 
 
 class MarkBot(BaseBot):
@@ -329,9 +326,9 @@ class EvilIncarnateBot(BaseBot):
 
 
 if __name__ == "__main__":
-    num_games = 100
+    num_games = 1000
     NervousNellie.play(num_games)
-    # MiddlingMargaret.play(num_games)
-    # DaringDarla.play(num_games)
-    # YourBot.play(num_games)
-    # MarkBot.play(num_games)
+    MiddlingMargaret.play(num_games)
+    DaringDarla.play(num_games)
+    YourBot.play(num_games)
+    MarkBot.play(num_games)
